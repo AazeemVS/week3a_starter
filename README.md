@@ -6,15 +6,17 @@ The app is empty on purpose. `lib/main.dart` has a bare `MaterialApp` with "Hell
 
 ---
 
-## I. Clone It
+## I. Get the Code
 
-Copy the repo URL from the green **Code** button, then:
+Three ways, all worth the same credit. Use whichever you already know:
 
-```bash
-git clone <your-repo-url>
-```
+- **GitHub Desktop:** clone your repo, then open the folder in VS Code.
+- **Command line:** copy the URL from the green **Code** button, then `git clone <your-repo-url>`.
+- **Neither one cooperating?** Skip cloning and edit `lib/main.dart` directly on GitHub.com. Full credit, no penalty.
 
-Open the folder in VS Code. Make sure you open the folder that *contains* `pubspec.yaml`, not the one above it. Opening the parent folder is the most common way this goes wrong, and the error you get looks completely unrelated to the real cause.
+Step by step for all three: [Participation Repos](https://github.com/jptweb/IGME-340-Shared/blob/main/documents/participation.md).
+
+Once it's on your machine, open the folder in VS Code. Make sure you open the folder that *contains* `pubspec.yaml`, not the one above it. Opening the parent folder is the most common way this goes wrong, and the error you get looks completely unrelated to the real cause.
 
 **Don't clone into a path with spaces.** `Documents/IGME 340/` will cause failures later that have nothing to do with your code. Use something like `Documents/igme-340/`.
 
@@ -51,13 +53,19 @@ Two things worth knowing before we start:
 
 ## IV. Commit and Push
 
-At the end of class:
+At the end of class, get your work back up to GitHub.
+
+**GitHub Desktop:** write a summary, click **Commit to main**, then **Push origin**.
+
+**Command line:**
 
 ```bash
 git add .
 git commit -m "Week 3A in-class work"
 git push
 ```
+
+**If push is fighting you:** open `lib/main.dart` on GitHub.com, click the pencil, paste your code in, and commit there. Same credit.
 
 That's your participation credit. You're graded on the commit landing, not on the app looking right.
 
