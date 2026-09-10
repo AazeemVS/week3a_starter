@@ -34,20 +34,41 @@ class _Week3AppState extends State<Week3App> {
         backgroundColor: Colors.yellow,
         title: Text("Week 3A App"),
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Container(
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Container(
               width: 200,
-              height: 100,
+              height: 250,
               color: Colors.green,
-              child: Text("Hello Week 1")),
-          Container(
+              child: Text("Hello Week 1"),
+            ),
+            SizedBox(height: 30),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(children: [
+                Container(width: 150, height: 150, color: Colors.brown),
+                Container(width: 150, height: 150, color: Colors.red),
+                Container(width: 150, height: 150, color: Colors.black),
+                Container(width: 150, height: 150, color: Colors.brown),
+                Container(width: 150, height: 150, color: Colors.red),
+                Container(width: 150, height: 150, color: Colors.black),
+              ]),
+            ),
+            Container(
               width: 150,
-              height: 100,
+              height: 250,
               color: Colors.yellow,
-              child: Text("Hello Week 2"))
-        ],
+              child: Text("Hello Week 2"),
+            ),
+            Container(
+              width: 200,
+              height: 250,
+              color: Colors.pink,
+              child: Text("Hello Week 2"),
+            ),
+          ],
+        ),
       ),
     );
   }
