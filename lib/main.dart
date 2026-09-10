@@ -1,3 +1,7 @@
+//JP's App for day 3A
+
+//Test anohter
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,49 +13,41 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(home: Week3ALayout());
+    return const MaterialApp(
+      home: Week3App(),
+    );
   }
 }
 
-class Week3ALayout extends StatelessWidget {
-  const Week3ALayout({super.key});
+class Week3App extends StatefulWidget {
+  const Week3App({super.key});
 
+  @override
+  State<Week3App> createState() => _Week3AppState();
+}
+
+class _Week3AppState extends State<Week3App> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.yellow,
-        title: const Text('Week 3A App'),
+        title: Text("Week 3A App"),
       ),
-      body: SingleChildScrollView(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            const SizedBox(height: 150),
-            Row(
-              children: [
-                const SizedBox(width: 15),
-                Container(
-                  color: Colors.lightGreen,
-                  width: 300,
-                  height: 150,
-                  child: const Text('Hello Week 1'),
-                ),
-              ],
-            ),
-            Row(
-              children: [
-                const SizedBox(width: 60),
-                Container(
-                  color: Colors.yellow,
-                  width: 220,
-                  height: 155,
-                  child: const Text('Hello Week 2'),
-                ),
-              ],
-            ),
-          ],
-        ),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Container(
+              width: 200,
+              height: 100,
+              color: Colors.green,
+              child: Text("Hello Week 1")),
+          Container(
+              width: 150,
+              height: 100,
+              color: Colors.yellow,
+              child: Text("Hello Week 2"))
+        ],
       ),
     );
   }
